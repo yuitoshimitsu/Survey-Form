@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="./surveyform.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <h1>Survey Form</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="name">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="email">
+                <label>Email</label>
+                <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="age">
+                <label>Age</label>
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="option">
+                <label>Which option best describes you?</label>
+                <select name="describe">
+                    <option value="Student">Student</option>
+                    <option value="Officeworker">Office worker</option>
+                </select>
+            </div>
+            <div class="recommend">
+                <label>Would you recommend to a friend?
+                    <div class="list">
+                        <input type="radio" value="yes" class="radio" name="recommend__answer">Yes
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="radio" value="no" class="radio" name="recommend__answer">No
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="radio" value="maybe" class="radio" name="recommend__answer">Maybe
+                    </div>
+                </label>
+            </div>
+            <div class="known">
+                <label>Languages and Frameworks known <small>(Check all that apply)</small>
+                    <div class="list">
+                        <input type="checkbox" value="c" class="checkbox">C
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="checkbox" value="c++" class="checkbox">C++
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="checkbox" value="c#" class="checkbox">C#
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="checkbox" value="java" class="checkbox">Java
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="checkbox" value="python" class="checkbox">Python
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="checkbox" value="javascript" class="checkbox">JavaScript
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="checkbox" value="react" class="checkbox">React
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="checkbox" value="angular" class="checkbox">Angular
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="checkbox" value="django" class="checkbox">Django
+                    </div>
+                </label>
+                <label>
+                    <div class="list">
+                        <input type="checkbox" value="Spring" class="checkbox">Spring
+                    </div>
+                </label>
+            </div>
+
+            <div class="comments">
+                <label>Any comments or suggestions</label>
+                <textarea name="commentform"></textarea>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Submit" class="submit__btn">
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+</body>
+
+</html>
