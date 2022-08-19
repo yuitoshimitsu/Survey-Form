@@ -10,115 +10,110 @@
 </head>
 
 <body>
+
     <header>
-        <div class="container">
-            <div class="header">
-                <h1>Survey Form</h1>
-            </div>
+        <div class="header">
+            <h1>Survey Form</h1>
         </div>
     </header>
 
-    <div class="wrapper">
+    <!-- CREATE form -->
+    <form id="form">
         <div class="container">
-            <div class="name">
+
+            <!-- Details -->
+            <div class="form-control">
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name">
             </div>
-            <div class="email">
+
+            <div class="form-control">
                 <label>Email</label>
                 <input type="text" placeholder="Enter your email">
             </div>
-            <div class="age">
+
+            <div class="form-control">
                 <label>Age</label>
                 <input type="text" placeholder="Enter your age">
             </div>
-            <div class="option">
+
+            <div class="form-control">
                 <label>Which option best describes you?</label>
                 <select name="describe">
                     <option value="Student">Student</option>
                     <option value="Officeworker">Office worker</option>
                 </select>
             </div>
-            <div class="recommend">
-                <label>Would you recommend to a friend?
-                    <div class="list">
-                        <input type="radio" value="yes" class="radio" name="recommend__answer">Yes
-                    </div>
+
+            <div class="form-control">
+                <label>
+                    Would you recommend to a friend?
+                </label>
+
+                <label>
+                    <input type="radio" value="yes" class="radio" name="recommend__answer">Yes
+
                 </label>
                 <label>
-                    <div class="list">
-                        <input type="radio" value="no" class="radio" name="recommend__answer">No
-                    </div>
+
+                    <input type="radio" value="no" class="radio" name="recommend__answer">No
+
                 </label>
                 <label>
-                    <div class="list">
-                        <input type="radio" value="maybe" class="radio" name="recommend__answer">Maybe
-                    </div>
-                </label>
-            </div>
-            <div class="known">
-                <label>Languages and Frameworks known <small>(Check all that apply)</small>
-                    <div class="list">
-                        <input type="checkbox" value="c" class="checkbox">C
-                    </div>
-                </label>
-                <label>
-                    <div class="list">
-                        <input type="checkbox" value="c++" class="checkbox">C++
-                    </div>
-                </label>
-                <label>
-                    <div class="list">
-                        <input type="checkbox" value="c#" class="checkbox">C#
-                    </div>
-                </label>
-                <label>
-                    <div class="list">
-                        <input type="checkbox" value="java" class="checkbox">Java
-                    </div>
-                </label>
-                <label>
-                    <div class="list">
-                        <input type="checkbox" value="python" class="checkbox">Python
-                    </div>
-                </label>
-                <label>
-                    <div class="list">
-                        <input type="checkbox" value="javascript" class="checkbox">JavaScript
-                    </div>
-                </label>
-                <label>
-                    <div class="list">
-                        <input type="checkbox" value="react" class="checkbox">React
-                    </div>
-                </label>
-                <label>
-                    <div class="list">
-                        <input type="checkbox" value="angular" class="checkbox">Angular
-                    </div>
-                </label>
-                <label>
-                    <div class="list">
-                        <input type="checkbox" value="django" class="checkbox">Django
-                    </div>
-                </label>
-                <label>
-                    <div class="list">
-                        <input type="checkbox" value="Spring" class="checkbox">Spring
-                    </div>
+
+                    <input type="radio" value="maybe" class="radio" name="recommend__answer">Maybe
+
                 </label>
             </div>
 
-            <div class="comments">
+
+            <div class="form-control">
+                <label>
+                    Languages and Frameworks known <small>(Check all that apply)</small>
+                </label>
+                <label >
+                    <input type="checkbox" name="inp">C
+                </label>
+                <label>
+                    <input type="checkbox" name="inp">C++
+                </label>
+                <label>
+                    <input type="checkbox" name="inp">C#
+                </label>
+                <label>
+                    <input type="checkbox" name="inp">Java
+                </label>
+                <label>
+                    <input type="checkbox" name="inp">Python
+                </label>
+                <label>
+                    <input type="checkbox" name="inp">JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="inp">React
+                </label>
+                <label>
+                    <input type="checkbox" name="inp">Angular
+                </label>
+                <label>
+                    <input type="checkbox" name="inp">Django
+                </label>
+                <label>
+                    <input type="checkbox" name="inp">Spring
+                </label>
+            </div>
+
+            <div class="form-control">
                 <label>Any comments or suggestions</label>
                 <textarea name="commentform"></textarea>
             </div>
 
-            <div class="submit">
-                <input type="submit" value="Submit" class="submit__btn">
-            </div>
+
+            <button type="submit" value="Submit">
+                submit
+            </button>
         </div>
-    </div>
+    </form>
 
     <footer></footer>
 </body>
